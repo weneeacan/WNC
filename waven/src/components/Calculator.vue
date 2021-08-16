@@ -72,7 +72,6 @@ export default {
     },
     // 等於
     equal() {
-      console.log(this.current, this.previous);
       this.current = `${this.operator(
         parseFloat(this.previous),
         parseFloat(this.current)
