@@ -12,7 +12,6 @@
         <button type="button" class="YESBTN btn btn-danger p-3 m-5">接受</button>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -30,7 +29,8 @@
   .msg {
     background: #6cebf0;
     font-size: 25px;
-    box-shadow: 3px 3px 12px rgb(168, 168, 166)
+    box-shadow: 3px 3px 12px rgb(168, 168, 166);
+    margin-top: 20px;
   }
 
   .YESBTN {
@@ -39,14 +39,12 @@
   }
 
   .main {
-    position: absolute;
-    top: 10%;
+    position: relative;
+    top: 50%;
     left: 25%;
     background-color: rgba(235, 140, 31, 0.959);
-    box-sizing: content-box;
     width: 50%;
-    height: 50%;
-    /* border-bottom: rgb(138, 135, 135) solid 4px; */
+    height: 500px;
     box-shadow: 3px 3px 12px rgb(168, 168, 166)
   }
 </style>
