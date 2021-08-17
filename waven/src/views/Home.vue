@@ -1,8 +1,11 @@
 <template>
-  <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
-    <Check msg="請給我您的個資" />
-    <Footer></Footer>
+  <div class="home row">
+    <div class="container-fluid">
+      <Navbar title="GIVEME-19 免費給我個人資料平台" />
+      <!-- <img alt="Vue logo" src="../assets/logo.png" /> -->
+      <Check msg="請給我您的個資" />
+      <Footer class="footer"></Footer>
+    </div>
   </div>
 </template>
 
@@ -15,6 +18,10 @@
     name: "Home",
     components: {
       Check, Footer, Navbar
+    },
+    data() {
+      return {
+      }
     },
   };
 </script>
