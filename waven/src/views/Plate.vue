@@ -4,7 +4,9 @@
         <div class="row">
             <div class="container-fluid">
                 <Navbar />
-                <Gime />
+                <div style="margin-left: 10%;">
+                    <Gime />
+                </div>
                 <Footer></Footer>
             </div>
         </div>

@@ -10,6 +10,7 @@
             <i class="fas fa-heart me-2"></i>再次感謝<i class="fas fa-heart ms-2"></i>
         </div>
         <div class="d-flex">
+
             <div class="Form-AreaL container d-flex">
                 <div class="" style="margin-left: 50%;">
                     <div class="form-floating mt-3">
@@ -49,8 +50,11 @@
                         <input type="date" min="1900-01-01" max="2021-01-01" required="required" />
                     </div>
                     <div class="mt-3 mb-3">
+
                         <label for="formFileLg" class="form-label fs-3">選一個你喜歡的圖片<i class="fas fa-image"></i></label>
-                        <input class="form-control form-control-lg" id="formFileLg" type="file">
+                        <input class="form-control form-control-lg" type="file" ref="uploadImag"
+                            accept="image/gif, image/jpeg, image/png" @change="previewImg">
+
                     </div>
                 </div>
                 <!--左邊的內層-->
@@ -58,6 +62,7 @@
             <!--end of form area left-->
             <div class="Form-AreaR container">
                 <!-- 圖片預覽 -->
+                <img :src="preview" class="mt-3" style="width: 75%;">
             </div>
             <!--end of form area right-->
 
@@ -71,10 +76,7 @@
                         我已閱讀那個什麼規則的 隨便
                     </label>
                 </div>
-                <button type="button" class="btn btn-success btn-lg mt-2">送出</button>
-                <!-- <div class="d-flex">
-                    <router-link to="/" type="button" class="btn btn-success btn-lg mt-2">送出</router-link>
-                </div> -->
+                <button type="button" class="btn btn-success btn-lg mt-2" @click="submit">送出</button>
 
             </div>
 
@@ -84,15 +86,40 @@
 </template>
 <script>
     export default {
+        data() {
+            return {
+                preview: ""
+            }
+        },
+        methods: {
+            submit() {
+                alert("submit!")
+            },
+            previewImg() {
+                let input = event.target;
+                console.log(input.files)
+                if (input.files) {
+                    let reader = new FileReader();
+                    reader.onload = (e) => {
+                        console.log(e.target.result)
+                        this.preview = e.target.result;
+                    }
+
+                    this.image = input.files[0];//base64
+                    reader.readAsDataURL(input.files[0]);//轉成圖片(readAsDataURL)
+                }
+            }
+        },
 
     }
+
 </script>
 <style>
     .frame {
         position: relative;
         width: 90%;
-        margin-left: 5%;
-        background: rgb(226, 216, 216);
+        /* margin-left: 5%; */
+        background: rgb(36, 182, 85);
         height: auto;
     }
 
