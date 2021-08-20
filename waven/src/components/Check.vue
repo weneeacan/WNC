@@ -4,12 +4,12 @@
     <div class="main pt-3 rounded ">
 
       <div class="d-flex justify-content-center">
-        <span class="msg border p-5 rounded">請 預約/查詢 給我您的個資</span>
+        <span class="msg border p-5 rounded">請給我您的個資</span>
       </div>
 
       <div class="d-flex justify-content-center">
-        <router-link to="/Plate" type="button" class="YESBTN btn btn-primary p-3 m-5">查詢</router-link>
-        <router-link to="/Plate" type="button" class="YESBTN btn btn-danger p-3 m-5">預約</router-link>
+        <router-link to="/Plate" type="button" class="YESBTN btn btn-primary p-3 m-5">給過了想查</router-link>
+        <router-link to="/Plate" type="button" class="YESBTN btn btn-danger p-3 m-5">給你</router-link>
       </div>
     </div>
   </div>

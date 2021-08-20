@@ -10,7 +10,7 @@
                         GIVEME-19 免費給我個人資料平台提供原則與操作問題：沒有客服專線。
                     </div>
                     <div class="mt-1">
-                        weneeacan製作，更新日期： 110 年 8 月 17 日
+                        weneeacan製作，更新日期： 110 年 8 月 20 日
                     </div>
                     <div class="mt-1">
                         建議使用 Chrome、Edge、Safari、Firefox 以上版本之瀏覽器，螢幕解析度 1280 X 800 以上瀏覽
