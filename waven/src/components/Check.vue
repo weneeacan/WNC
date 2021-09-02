@@ -8,7 +8,7 @@
       </div>
 
       <div class="d-flex justify-content-center">
-        <router-link to="/Plate" type="button" class="YESBTN btn btn-primary p-3 m-5">給過了想查</router-link>
+        <router-link to="/Serme" type="button" class="YESBTN btn btn-primary p-3 m-5">給過了想查</router-link>
         <router-link to="/Plate" type="button" class="YESBTN btn btn-danger p-3 m-5">給你</router-link>
       </div>
     </div>

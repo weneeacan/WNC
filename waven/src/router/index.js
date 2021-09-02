@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Plate from '../views/Plate.vue'
+import Serme from '../views/Serme.vue'
+
 import Calculator from '../components/Calculator.vue'
 import Computed from '../components/Computed.vue'
 import Weather from '../components/Weather.vue'
@@ -40,6 +42,11 @@ const routes = [
     path: '/Plate',
     name: 'Plate',
     component: Plate,
+  },
+  {
+    path: '/Serme',
+    name: 'Serme',
+    component: Serme,
   }
 ]
 

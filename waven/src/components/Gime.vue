@@ -113,7 +113,7 @@
     }
 
 </script>
-<style>
+<style scoped>
     .frame {
         position: relative;
         width: 90%;
