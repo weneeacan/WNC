@@ -6,7 +6,7 @@
                     <div class="me-auto">
                         <a class="navbar-brand" href="#">
                             <i class="fas fa-people-arrows" style="font-size: 40px;"></i>
-                            <span class="fs-2 ml-3">{{title}}</span>
+                            <span class="fs-2 ml-3">GIVEME-19 免費給我個人資料平台</span>
                         </a>
                     </div>
                     <div class="d-flex align-items-center">
@@ -36,9 +36,9 @@
 <script>
     export default {
         name: "Navbar",
-        props: {
-            title: String
-        },
+        // props: {
+        //     title: String
+        // },
         data() {
             return {
 
@@ -49,8 +49,8 @@
 </script>
 <style>
     .Navbar {
-        position: sticky;
         top: 0;
         z-index: 99;
+        box-shadow: 3px 3px 12px rgb(168, 168, 166);
     }
 </style>

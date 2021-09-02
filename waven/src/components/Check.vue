@@ -1,26 +1,27 @@
 <template>
   <div class="row">
 
-    <div class="main pt-3 rounded">
+    <div class="main pt-3 rounded ">
 
       <div class="d-flex justify-content-center">
-        <span class="msg border p-5 rounded">{{ msg }}</span>
+        <span class="msg border p-5 rounded">請給我您的個資</span>
       </div>
 
       <div class="d-flex justify-content-center">
-        <button type="button" class="YESBTN btn btn-primary p-3 m-5">好啊</button>
-        <button type="button" class="YESBTN btn btn-danger p-3 m-5">接受</button>
+        <router-link to="/Serme" type="button" class="YESBTN btn btn-primary p-3 m-5">給過了想查</router-link>
+        <router-link to="/Plate" type="button" class="YESBTN btn btn-danger p-3 m-5">給你</router-link>
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
   export default {
     name: "Check",
-    props: {
-      msg: String,
-    },
+    // props: {
+    //   msg: String,
+    // },
   };
 </script>
 
@@ -44,7 +45,10 @@
     left: 25%;
     background-color: rgba(235, 140, 31, 0.959);
     width: 50%;
-    height: 500px;
-    box-shadow: 3px 3px 12px rgb(168, 168, 166)
+    height: 350px;
+    box-shadow: 3px 3px 12px rgb(168, 168, 166);
+    margin-bottom: 5px;
+    padding-bottom: 10%;
+
   }
 </style>
